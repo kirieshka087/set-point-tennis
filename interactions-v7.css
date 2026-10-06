@@ -1,0 +1,29 @@
+/* A small, deliberate reaction for each illustration; no layout displacement. */
+.coach-visual{transition:transform .6s cubic-bezier(.22,.7,.2,1)}
+.hero-stage:has(.coach-card:focus-visible) .coach-visual{transform:translateY(-5px)}
+.about .value-price,.about .value-age,.prices .price-card{transition:transform .5s cubic-bezier(.22,.7,.2,1),box-shadow .5s,border-color .45s}
+.about .academy-card{transition:transform .6s cubic-bezier(.22,.7,.2,1),box-shadow .5s}
+.senior-crop .senior-player{transition:filter .55s}
+.petersburg-title{transition:transform .5s cubic-bezier(.22,.7,.2,1),text-shadow .5s}
+.petersburg-title .tiny-square{transition:transform .5s,box-shadow .5s}
+.petersburg-card{transition:transform .5s cubic-bezier(.22,.7,.2,1),filter .5s}
+.price-tile .ruble-back{height:auto;transform:rotate(18deg);transform-origin:50% 55%;transition:transform .65s cubic-bezier(.22,.7,.2,1),filter .65s;filter:blur(2px) drop-shadow(6px 8px 5px #391c62a8);opacity:.64}
+.about .value-price:focus-visible{transform:translateY(-4px);box-shadow:0 16px 30px #0006;border-color:#9ab88755}
+.price-tile:focus-visible .ruble-back{transform:rotate(26deg) translate(2px,-3px)}
+@media(hover:hover) and (pointer:fine){
+ .hero-stage:has(.coach-card:hover) .coach-visual{transform:translateY(-5px)}
+ .about .value-price:hover,.about .value-age:hover{transform:translateY(-4px);box-shadow:0 16px 30px #0006;border-color:#9ab88755}
+ .about .value-price:hover .academy-card{transform:rotate(-3.5deg) translateY(-2px);box-shadow:5px 15px 28px #0008}
+ .about .value-age:hover .senior-player{filter:brightness(1.11) drop-shadow(10px 15px 12px #0005)}
+ .petersburg-title:hover{transform:translateY(-2px);text-shadow:0 0 26px #b2c7a018}
+ .petersburg-title:hover .tiny-square{transform:rotate(45deg);box-shadow:0 0 14px #9cff182b}
+ .petersburg-card:hover{transform:translateY(-3px);filter:brightness(1.06)}
+ .prices .price-card:hover{transform:translateY(-3px);border-color:#a4bc7f66;box-shadow:0 16px 27px #0004}
+ .price-tile:hover .ruble-back{transform:rotate(26deg) translate(2px,-3px);filter:blur(1.7px) drop-shadow(7px 10px 6px #391c62a8)}
+}
+@media(prefers-reduced-motion:reduce){
+ .hero-stage:has(.coach-card:hover) .coach-visual,.hero-stage:has(.coach-card:focus-visible) .coach-visual,.about .value-price:hover,.about .value-price:focus-visible,.about .value-age:hover,.prices .price-card:hover,.petersburg-title:hover,.petersburg-card:hover{transform:none}
+ .about .value-price:hover .academy-card{transform:rotate(-5deg)}
+ .petersburg-title:hover .tiny-square{transform:none}
+ .price-tile:hover .ruble-back,.price-tile:focus-visible .ruble-back{transform:rotate(18deg)}
+}

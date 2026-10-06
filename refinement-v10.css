@@ -1,0 +1,30 @@
+/* Real generated studio artwork replaces the earlier line illustrations. */
+.program-card,.program-card.kids,.program-card.adults{min-height:760px;background-image:radial-gradient(ellipse at 6% 4%,#dce5cf12,transparent 55%),linear-gradient(135deg,#2d312c,#212420 78%),linear-gradient(135deg,#88917d99,#4c584544 38%,#1c261b)}
+.program-card.kids{background-image:radial-gradient(ellipse at 6% 5%,#e99bc51a,transparent 53%),linear-gradient(135deg,#322e30,#212420 78%),linear-gradient(135deg,#b59caa99,#6c515e44 38%,#2c2328)}
+.program-card.adults{background-image:radial-gradient(ellipse at 6% 5%,#b5e78017,transparent 53%),linear-gradient(135deg,#30352e,#212420 78%),linear-gradient(135deg,#a8b49899,#586a4844 38%,#20291a)}
+.program-art-panel{position:relative;align-self:flex-end;display:flex;align-items:center;justify-content:center;width:280px;height:220px;margin:14px -4px 15px;isolation:isolate;flex-shrink:0}
+.program-generated-art{display:block;width:250px;height:220px;object-fit:contain;pointer-events:none;filter:drop-shadow(7px 11px 10px #0005);transition:transform .75s cubic-bezier(.22,.7,.2,1),filter .6s;transform-origin:50% 70%}
+.program-card p{max-width:100%}
+@media(hover:hover) and (pointer:fine){
+ .program-card:hover .program-generated-art{transform:translate(0,-4px) rotate(-2deg) scale(1.015);filter:drop-shadow(10px 16px 12px #0006)}
+ .program-card.adults:hover .program-generated-art{transform:translate(3px,-4px) rotate(1.5deg) scale(1.015)}
+ .program-card.personal:hover .program-generated-art{transform:translate(0,-3px) rotate(-1deg) scale(1.01)}
+}
+@media(max-width:1400px) and (min-width:761px){
+ .program-card,.program-card.kids,.program-card.adults{min-height:724px}
+ .program-art-panel{width:240px;height:210px;margin:14px -4px 12px}
+ .program-generated-art{width:230px;height:210px}
+}
+@media(max-width:1100px) and (min-width:761px){
+ .program-art-panel{width:208px;height:194px}
+ .program-generated-art{width:205px;height:194px}
+}
+@media(max-width:760px){
+ .program-card,.program-card.kids,.program-card.adults{min-height:610px}
+ .program-art-panel{width:220px;height:158px;margin:14px -6px 12px}
+ .program-generated-art{width:205px;height:156px}
+}
+@media(prefers-reduced-motion:reduce){
+ .program-generated-art{transition:none}
+ .program-card:hover .program-generated-art,.program-card.adults:hover .program-generated-art,.program-card.personal:hover .program-generated-art{transform:none}
+}

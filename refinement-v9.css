@@ -1,0 +1,112 @@
+/* Graphite, fine engraved details and one consistent upper-left light. */
+html{scrollbar-gutter:stable}
+.header{position:absolute}
+html.site-loading{overflow:hidden}
+.site-loading .page-shell>:not(.preloader):not(noscript){visibility:hidden}
+.preloader{display:flex;animation:none;opacity:1;visibility:visible;pointer-events:auto;background:radial-gradient(ellipse at 38% 35%,#20241e,#0b0d0a 60%);transition:opacity .42s ease,visibility 0s .42s}
+.preloader.done{opacity:0;visibility:hidden;pointer-events:none}
+.loader-track{width:190px;height:2px;overflow:hidden;background:#38402e;box-shadow:0 1px 0 #0008}
+.loader-track>span{animation:none;transform:scaleX(0);background:linear-gradient(90deg,#e9f8d5,#a1ff19);transform-origin:left}
+.preloader[data-phase=loading] .loader-track>span{animation:ready-progress 3s cubic-bezier(.25,.45,.35,1) forwards}
+.preloader[data-phase=complete] .loader-track>span,.preloader[data-phase=done] .loader-track>span{transform:scaleX(1);animation:none}
+.loader-caption{color:#9ca58e;font-size:11px;letter-spacing:2px}
+@keyframes ready-progress{0%{transform:scaleX(0)}100%{transform:scaleX(1)}}
+.hero-booking-button{gap:8px;font-size:12px;padding:16px 12px}
+.booking-engraving{width:26px;height:30px;flex:0 0 26px;transition:transform .55s cubic-bezier(.22,.7,.2,1)}
+.hero-booking-button:hover .booking-engraving{transform:translate(2px,-2px) rotate(5deg)}
+.senior-crop{right:-22px}
+.senior-crop .senior-player{right:0}
+.programs .section-heading{margin-bottom:40px}
+.programs .section-heading h2 em,.players .section-heading h2 em{background:linear-gradient(135deg,#f2f3e9 8%,#adb4a3 65%,#697361);background-clip:text;-webkit-text-fill-color:transparent}
+.program-card,.program-card.kids,.program-card.adults{border:1px solid transparent;border-radius:3px;background-image:radial-gradient(ellipse at 6% 4%,#dce5cf12,transparent 55%),linear-gradient(135deg,#2a2d29,#151816 78%),linear-gradient(135deg,#88917d99,#4c584544 38%,#1c261b);background-origin:border-box;background-clip:padding-box,padding-box,border-box;min-height:650px;padding:27px 28px 0;box-shadow:inset 0 1px 0 #e1ead507,8px 16px 28px #0002}
+.program-card.kids{background-image:radial-gradient(ellipse at 6% 5%,#e99bc51a,transparent 53%),linear-gradient(135deg,#302d2f,#171717 78%),linear-gradient(135deg,#b59caa99,#6c515e44 38%,#2c2328)}
+.program-card.adults{background-image:radial-gradient(ellipse at 6% 5%,#b5e78017,transparent 53%),linear-gradient(135deg,#2e322c,#151817 78%),linear-gradient(135deg,#a8b49899,#586a4844 38%,#20291a)}
+.program-picture{margin:-27px -28px 0;height:auto;aspect-ratio:16/9;border-bottom:1px solid #b8c5a826}
+.program-picture img{object-fit:cover;filter:saturate(.65) contrast(1.035);transform:none}
+.program-picture:after{background:linear-gradient(135deg,#edf4e606,transparent 50%,#00000019)}
+.program-card .program-top{margin-top:23px}
+.program-card .program-top>span:first-child{font-size:29px;color:#b6c1ae5a}
+.program-card .tag{border-color:#bdc4b724;background:#12171224;color:#b1b9a6}
+.program-card.kids .tag{color:#d0b4c4;border-color:#d0b4c424}
+.program-card h3{font-size:27px;line-height:1.14;font-weight:600;letter-spacing:-1.05px;margin:19px 0 15px}
+.program-card p{font-size:15px;line-height:1.6;max-width:95%;margin:0;color:#b1b9a7}
+.program-illustration.engraved-art{position:relative;width:162px;height:116px;right:auto;bottom:auto;margin:15px 0 13px;align-self:flex-end;opacity:.92;flex-shrink:0;overflow:visible;transition:transform .65s cubic-bezier(.22,.7,.2,1),opacity .4s}
+.engraved-racket,.engraved-ball,.engraved-target{transform-box:fill-box;transform-origin:center;transition:translate .65s cubic-bezier(.22,.7,.2,1),rotate .65s cubic-bezier(.22,.7,.2,1)}
+.program-card button{margin:auto -28px 0;padding:20px 28px;min-height:63px;background:linear-gradient(135deg,#e2ecd405,transparent);border-color:#ccd7bc1b}
+.program-card button>span{font-size:21px;color:#b8c5a5}
+.program-card.kids button{color:#eeb1d4}
+.player-shot,.player-action{border:1px solid transparent;border-radius:3px;background-image:linear-gradient(135deg,#343934,#1b201e),linear-gradient(135deg,#a5b29a99,#51634644 44%,#1c261b);background-clip:padding-box,border-box;background-origin:border-box;box-shadow:inset 0 1px 0 #e6ecdf10,10px 18px 32px #0003}
+.player-shot:after{background:linear-gradient(180deg,transparent 28%,#1c221ae8 98%)}
+.player-shot img{object-fit:cover;filter:saturate(.55) contrast(1.03)}
+.player-shot figcaption{max-width:72%;gap:12px}
+.player-shot figcaption span{color:#c0cbb1}
+.player-shot figcaption strong{font-size:26px;font-weight:600;line-height:1.16;letter-spacing:-.8px}
+.player-shot figcaption p{font-size:14px;line-height:1.5;color:#c1c9b6;max-width:480px}
+.players .section-heading{background:none}
+.coach-bio>p{white-space:pre-line}
+.pre-footer-wordmark{width:min(1440px,calc(100% - 96px));margin:90px auto 8px;text-align:center;font-size:clamp(80px,14vw,198px);font-weight:800;line-height:1;letter-spacing:-.07em;color:#eff2e9;user-select:none}
+.pre-footer-wordmark>span{color:#9cff18}
+.contacts{padding-top:65px}
+@media(hover:hover) and (pointer:fine){
+ .program-card:hover .program-illustration.engraved-art{transform:translateY(-2px);opacity:1}
+ .program-card:hover .engraved-racket{translate:0 -3px;rotate:-2deg}
+ .program-card:hover .engraved-ball{translate:3px -4px;rotate:5deg}
+ .program-card:hover .engraved-target{rotate:2deg}
+ .player-shot:hover{box-shadow:inset 0 1px 0 #e6ecdf18,10px 24px 32px #0004}
+}
+@media(max-width:1400px) and (min-width:761px){
+ .hero-booking-button{font-size:10.5px;gap:5px;padding:16px 9px}
+ .booking-engraving{width:22px;height:26px;flex-basis:22px}
+ .program-card,.program-card.kids,.program-card.adults{padding:25px 24px 0;min-height:638px}
+ .program-picture{margin:-25px -24px 0}
+ .program-card h3{font-size:24px}
+ .program-card p{font-size:14px;max-width:100%}
+ .program-card button{margin-left:-24px;margin-right:-24px;padding:20px 24px}
+ .program-illustration.engraved-art{width:142px;height:102px}
+ .player-shot figcaption strong{font-size:22px}
+ .player-shot figcaption p{font-size:12px}
+}
+@media(max-width:1100px) and (min-width:761px){
+ .hero-booking-button{font-size:8.5px;gap:3px;padding:15px 7px}
+ .booking-engraving{width:18px;flex-basis:18px}
+ .program-card h3{font-size:21px}
+ .program-card p{font-size:14px}
+ .player-shot figcaption strong{font-size:19px}
+ .player-shot figcaption p{font-size:11px}
+}
+@media(max-width:760px){
+ .hero-booking-button{font-size:10.5px;padding:16px 10px;gap:6px}
+ .booking-engraving{width:24px;flex-basis:24px;height:26px}
+ .senior-crop{right:-18px}
+ .senior-crop .senior-player{width:258px;right:0}
+ .program-card,.program-card.kids,.program-card.adults{padding:24px 25px 0;min-height:610px}
+ .program-picture{margin:-24px -25px 0}
+ .program-card .program-top{margin-top:19px}
+ .program-card h3{font-size:27px;margin:17px 0 14px}
+ .program-card p{font-size:15px;max-width:100%;line-height:1.55;margin:0}
+ .program-illustration.engraved-art{width:148px;height:105px;margin:10px 0 10px;opacity:.92}
+ .program-card button{margin:auto -25px 0;padding:20px 25px;min-height:61px}
+ .player-shot figcaption{max-width:none;padding:24px;background:radial-gradient(ellipse at 0 0,#52604523,transparent 75%),linear-gradient(135deg,#2d332e,#1b201e)}
+ .player-shot figcaption strong{font-size:23px}
+ .player-shot figcaption p{font-size:14px}
+ .pre-footer-wordmark{width:calc(100% - 38px);font-size:clamp(44px,14.7vw,110px);margin:62px auto 0}
+ .contacts{padding-top:49px}
+}
+@media(max-width:760px) and (min-height:600px){
+ .program-grid{display:block;padding-bottom:calc((100svh - var(--stack-card-height,610px))/2 + 100px)}
+ .program-grid>.program-card{position:sticky;top:calc((100svh - var(--stack-height,610px))/2);z-index:calc(2 + var(--stack-index,0));margin-bottom:max(130px,calc(100svh - var(--stack-height,610px) + 130px));transform:none!important;transition:opacity .55s,border-color .4s,box-shadow .4s;box-shadow:0 -12px 28px #0005}
+ .program-grid>.program-card:last-child{margin-bottom:0}
+}
+@media(max-width:370px){
+ .program-card h3{font-size:25px}
+ .hero-booking-button{font-size:9.5px;gap:4px}
+ .booking-engraving{width:20px;flex-basis:20px}
+}
+@media(prefers-reduced-motion:reduce){
+ .preloader{display:flex;transition:none}
+ .preloader[data-phase=loading] .loader-track>span{animation:none;transform:scaleX(0)}
+ .hero-booking-button:hover .booking-engraving,.program-card:hover .program-illustration.engraved-art{transform:none}
+ .program-card:hover .engraved-racket,.program-card:hover .engraved-ball,.program-card:hover .engraved-target{translate:none;rotate:none}
+ .program-grid{padding-bottom:0}
+ .program-grid>.program-card{position:relative;top:auto;margin-bottom:18px}
+}

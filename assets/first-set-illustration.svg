@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 180" fill="none">
+ <defs>
+  <linearGradient id="frame" x1="27" y1="20" x2="107" y2="125" gradientUnits="userSpaceOnUse"><stop stop-color="#f09acc"/><stop offset=".5" stop-color="#a8568b"/><stop offset="1" stop-color="#322c35"/></linearGradient>
+  <linearGradient id="ball" x1="105" y1="105" x2="142" y2="146" gradientUnits="userSpaceOnUse"><stop stop-color="#d9ff70"/><stop offset="1" stop-color="#75b817"/></linearGradient>
+  <clipPath id="strings"><ellipse cx="66" cy="57" rx="31" ry="43"/></clipPath>
+ </defs>
+ <path d="M10 157h123M20 145h98M40 137h58" stroke="#748965" stroke-opacity=".32"/>
+ <path d="M30 136Q57 119 120 131" stroke="#e6a0cc" stroke-dasharray="3 5" stroke-opacity=".5"/>
+ <g transform="rotate(-23 68 86)">
+  <ellipse cx="66" cy="57" rx="36" ry="48" fill="#202523" stroke="url(#frame)" stroke-width="5"/>
+  <g clip-path="url(#strings)" stroke="#c6d3c1" stroke-width=".8" opacity=".65">
+   <path d="M37 8v98m8-98v98m8-98v98m8-98v98m8-98v98m8-98v98m8-98v98m8-98v98M29 20h74M29 28h74M29 36h74M29 44h74M29 52h74M29 60h74M29 68h74M29 76h74M29 84h74M29 92h74"/>
+  </g>
+  <path d="m42 96 17 31h14l17-31M58 122h16M66 105v18" stroke="url(#frame)" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M60 127h12v41H60z" fill="#383b38" stroke="#a2b69a" stroke-width="1.2"/>
+  <path d="m60 133 12 5m-12 3 12 5m-12 3 12 5m-12 3 12 5" stroke="#d5dacd" stroke-width="1.1"/>
+  <path d="M42 22q-13 18-11 34" stroke="#ffcfeb" stroke-width="2" stroke-linecap="round" opacity=".8"/>
+ </g>
+ <circle cx="118" cy="128" r="23" fill="url(#ball)"/>
+ <path d="M103 112c27 5 6 27 29 34M99 141c22-1 16-28 32-30" stroke="#f2f9da" stroke-width="2.2"/>
+ <path d="m143 119 6-2m-8 33 5 3" stroke="#c4e782" stroke-opacity=".35" stroke-linecap="round"/>
+</svg>

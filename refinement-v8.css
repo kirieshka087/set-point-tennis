@@ -1,0 +1,101 @@
+/* Final composition and motion refinements. */
+.page-shell{overflow:clip}
+.hero:after{z-index:-1}
+.hero-cards>.coach-card,.hero-cards>.price-tile,.about .value-price{cursor:default}
+.price-tile .ruble-back{transform:rotate(-24deg);filter:hue-rotate(38deg) saturate(1.2) blur(2px) drop-shadow(6px 8px 5px #72234fa8);opacity:.72}
+.price-tile:hover .ruble-back,.price-tile:focus-visible .ruble-back{transform:rotate(-29deg) translate(-2px,-3px);filter:hue-rotate(38deg) saturate(1.2) blur(1.8px) drop-shadow(7px 10px 6px #72234fa8)}
+.about .value-price{display:flex;flex-direction:column;min-height:346px;padding:30px}
+.about .value-price p{font-size:14px;line-height:1.55;margin-bottom:0}
+.price-intro-visual{display:grid;grid-template-columns:100px minmax(0,1fr);align-items:center;gap:15px;min-height:156px;margin-top:12px}
+.price-tennis-art{display:block;width:120px;max-width:none;height:150px;position:relative;left:-8px;filter:drop-shadow(6px 9px 6px #0007);transition:transform .55s cubic-bezier(.22,.7,.2,1)}
+.about .value-price .academy-card{position:relative;top:auto;left:auto;right:auto;width:100%;height:134px;padding:19px 18px;transform:rotate(-4deg);border-radius:3px}
+.about .value-price .academy-tag{font-size:8px;letter-spacing:1px;line-height:1.7;max-width:60%;display:block}
+.about .value-price .mini-brand{font-size:15px;right:14px;top:15px}
+.about .value-price .academy-card>b{font-size:28px;letter-spacing:-1.2px;margin-top:19px;white-space:nowrap}
+.about .value-price .value-bottom{position:relative;left:auto;bottom:auto;display:flex;align-items:center;justify-content:space-between;gap:14px;margin-top:auto;padding-top:13px;font-size:11px;color:#a5b49a}
+.value-bottom strong{font-size:19px;white-space:nowrap;font-weight:500;color:#e2ebd7;letter-spacing:-.7px}
+.side-racket{padding:0;border:0;background:transparent;cursor:pointer;transition:translate .55s cubic-bezier(.22,.7,.2,1),filter .55s}
+.side-racket:focus-visible{outline:1px solid #9cff1866;outline-offset:8px}
+.side-racket:active{translate:0 -6px}
+.senior-crop .senior-player{right:8px}
+.program-picture img{object-fit:cover}
+.program-card.personal .program-picture img{object-position:center top!important}
+.coach-scene{object-fit:cover}
+.player-shot{background:#242725}
+.player-shot:after{background:linear-gradient(180deg,transparent 35%,#171b19e8)}
+.players .section-heading{background:radial-gradient(ellipse at 28% 25%,#3c414027,transparent 72%)}
+.coach-facts strong,.experience>strong,.price-amount{font-variant-numeric:tabular-nums}
+.price-amount>.amount-number{font:inherit;color:inherit;letter-spacing:inherit}
+.coach-card.scroll-arrival .ball-primary{animation:ball-out-left 1.6s cubic-bezier(.22,.7,.2,1)}
+.coach-card.scroll-arrival .ball-secondary{animation:ball-out-right 1.6s cubic-bezier(.22,.7,.2,1)}
+@keyframes ball-out-left{0%,100%{transform:none}40%,72%{transform:translate(-16px,11px) rotate(-4deg)}}
+@keyframes ball-out-right{0%,100%{transform:none}40%,72%{transform:translate(14px,-9px)}}
+footer{flex-wrap:wrap}
+footer>.footer-wordmark{display:block;flex-basis:100%;width:100%;order:10;margin:20px 0 0;text-align:center;font-size:clamp(62px,12vw,176px);line-height:1.05;font-weight:800;letter-spacing:-.065em;color:#edf0e9;user-select:none}
+.footer-wordmark>span{color:#9cff18}
+@media(hover:hover) and (pointer:fine){
+ .side-racket:hover,.about:has(.petersburg-title:hover) .side-racket{translate:0 -7px;filter:brightness(1.01) drop-shadow(12px 23px 14px #0008)}
+ .about .value-price:hover .price-tennis-art{transform:translate(-2px,-4px) rotate(-3deg)}
+ .about .value-price:hover .academy-card{transform:rotate(-2.5deg) translateY(-2px)}
+}
+@media(max-width:1400px) and (min-width:761px){
+ .about .value-price{padding:25px;min-height:326px}
+ .price-intro-visual{grid-template-columns:78px minmax(0,1fr);gap:10px;min-height:150px}
+ .price-tennis-art{width:97px;height:135px}
+ .about .value-price .academy-card{height:121px;padding:15px}
+ .about .value-price .academy-card>b{font-size:24px}
+ .about .value-price p{font-size:12px}
+}
+@media(max-width:1100px) and (min-width:761px){
+ .about .value-price{padding:21px}
+ .price-intro-visual{grid-template-columns:58px minmax(0,1fr);gap:7px}
+ .price-tennis-art{width:79px;height:118px;left:-13px}
+ .about .value-price .academy-card>b{font-size:21px}
+ .about .value-price .academy-tag{font-size:7px}
+ .about .value-price .mini-brand{font-size:12px;right:9px;top:12px}
+ .about .value-price .value-bottom{font-size:10px}
+ .value-bottom strong{font-size:16px}
+}
+@media(max-width:760px){
+ .about .value-price{padding:25px;min-height:344px;overflow:hidden}
+ .about .value-price p{font-size:13px}
+ .price-intro-visual{grid-template-columns:68px minmax(0,1fr);gap:10px;min-height:155px;margin-top:12px}
+ .price-tennis-art{width:94px;height:136px;left:-16px}
+ .about .value-price .academy-card{height:125px;padding:17px 14px;transform:rotate(-4deg)}
+ .about .value-price .academy-card>b{font-size:24px;margin-top:20px}
+ .about .value-price .mini-brand{font-size:12px;right:12px;top:15px}
+ .about .value-price .academy-tag{font-size:7px;letter-spacing:.8px}
+ .about .value-price .value-bottom{font-size:11px;padding-top:10px;gap:8px}
+ .value-bottom strong{font-size:18px}
+ .senior-crop .senior-player{right:7px;width:258px}
+ .header nav,.header nav.open{display:flex;top:calc(var(--header-height) - 1px);opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-14px);clip-path:inset(0 0 100% 0);max-height:calc(100svh - var(--header-height));overflow:auto;background:linear-gradient(135deg,#282c29fa,#141714fa);transition:opacity .3s,transform .42s cubic-bezier(.22,.7,.2,1),clip-path .42s cubic-bezier(.22,.7,.2,1),visibility 0s .42s;box-shadow:0 24px 32px #0006}
+ .header nav.open{opacity:1;visibility:visible;pointer-events:auto;transform:none;clip-path:inset(0);transition-delay:0s}
+ .header nav a{opacity:0;transform:translateY(-7px);transition:opacity .3s,transform .4s,color .2s}
+ .header nav.open a{opacity:1;transform:none;transition-delay:calc(var(--nav-order,0)*35ms)}
+ .menu-toggle{transition:color .3s,transform .35s}
+ .menu-toggle[aria-expanded=true]{transform:rotate(90deg);color:var(--lime)}
+ .program-card{background:linear-gradient(125deg,#292e28,#131612);min-height:625px}
+ .program-card.kids{background:linear-gradient(125deg,#32272e,#161415)}
+ .program-card.adults{background:linear-gradient(125deg,#2d3327,#141813)}
+ footer>.footer-wordmark{grid-column:1/-1;font-size:clamp(48px,15vw,110px);margin-top:12px}
+}
+@media(max-width:760px) and (min-height:600px){
+ .program-grid{display:block;padding-bottom:50px}
+ .program-grid>.program-card{position:sticky;top:min(calc(var(--header-height) + 14px + var(--stack-index,0)*12px),calc(100svh - var(--stack-height,625px) - 16px));z-index:calc(2 + var(--stack-index,0));margin-bottom:72px;box-shadow:0 -10px 32px #0005}
+ .program-grid>.program-card:last-child{margin-bottom:0}
+ .program-card:hover,.js-motion .program-card.visible:hover{transform:none}
+}
+@media(max-width:370px){
+ .about .value-price{padding:22px}
+ .price-intro-visual{grid-template-columns:58px minmax(0,1fr);gap:8px}
+ .about .value-price .academy-card>b{font-size:21px}
+ .about .value-price .value-bottom{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+ .coach-card.scroll-arrival .ball-primary,.coach-card.scroll-arrival .ball-secondary{animation:none}
+ .side-racket:hover,.side-racket:active,.about:has(.petersburg-title:hover) .side-racket{translate:none}
+ .about .value-price:hover .price-tennis-art{transform:none}
+ .price-tile:hover .ruble-back,.price-tile:focus-visible .ruble-back{transform:rotate(-24deg)}
+ .header nav,.header nav a{transition:none}
+ .program-grid>.program-card{position:relative;top:auto;margin-bottom:18px}
+}
